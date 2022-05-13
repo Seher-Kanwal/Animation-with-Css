@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>smoky effect</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color:black;
+        }
+
+        .smoke {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+        }
+            .smoke span {
+                color: white;
+                position: relative;
+                font-size: 45px;
+                font-family: sans-serif;
+                letter-spacing: 10px;
+                font-weight: bold;
+               
+                animation: seher 3s linear infinite;
+              
+            }
+            .smoke span:nth-child(1)
+            {
+                animation-delay:0s;
+            }
+                .smoke span:nth-child(2) {
+                    animation-delay: 0.1s;
+                }
+                .smoke span:nth-child(3) {
+                    animation-delay: 0.2s;
+                }
+                .smoke span:nth-child(4) {
+                    animation-delay: 0.3s;
+                }
+                .smoke span:nth-child(5) {
+                    animation-delay: 0.4s;
+                }
+                .smoke span:nth-child(6) {
+                    animation-delay: 0.5s;
+                }
+                .smoke span:nth-child(7) {
+                    animation-delay: 0.6s;
+                }
+
+                .smoke span:nth-child(8) {
+                    animation-delay: 0.7s;
+                }
+
+                .smoke span:nth-child(9) {
+                    animation-delay: 0.8s;
+                }
+      @keyframes seher {
+          0%{
+              filter:blur(0);
+          }
+        40% {
+            filter: blur(20px);
+        }
+        80% {
+            filter: blur(0);
+
+        }
+        100% {
+            filter: blur(0);
+        }
+
+      }
+    </style>
+</head>
+<body>
+    <div class="smoke">
+
+        <span> A </span>
+        <span> N</span>
+        <span> I </span>
+        <span> M </span>
+        <span> A </span>
+        <span> T </span>
+        <span> I </span>
+        <span> O </span>
+        <span> N </span>
+    </div>
+
+    <a href="loader animation.html">
+        <button style=" position: absolute; bottom: 20px; right: 20px;
+          height: 60px; width: 200px;
+            color: #9c27b0; background-color:white; border:none">
+            Loader animation
+        </button>
+    </a>
+</body>
+</html>
